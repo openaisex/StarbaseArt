@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creators - StarbaseArt</title>
+  <style>
+    body { background-color: #0d0e12; color: #f0f0f5; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; background: #151821; border-bottom: 1px solid #2a2e3d; }
+    .logo { font-size: 1.5rem; font-weight: bold; color: #fff; text-decoration: none; }
+    nav a { color: #a0a5b5; text-decoration: none; margin-left: 24px; font-size: 0.95rem; }
+    nav a:hover, nav a.active { color: #00f0ff; }
+    .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+    .creator-card { display: flex; gap: 24px; background: #171b26; border: 1px solid #282d3c; border-radius: 8px; padding: 24px; margin-bottom: 24px; align-items: center; }
+    .creator-avatar { width: 90px; height: 90px; border-radius: 50%; object-fit: cover; }
+    .creator-info h3 { margin: 0 0 8px 0; color: #fff; font-size: 1.2rem; }
+    .creator-role { font-size: 0.85rem; color: #00f0ff; margin-bottom: 8px; }
+    .creator-bio { font-size: 0.9rem; color: #9aa0b0; line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">STARBASEART</a>
+    <nav>
+      <a href="archives.html">Archives</a>
+      <a href="creators.html" class="active">Creators</a>
+      <a href="atelier.html">Atelier</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Featured Creators</h1>
+    <p style="color: #8a8f9e; margin-bottom: 30px;">The artists, photographers, and 3D concept creators capturing the space age.</p>
+
+    <!-- 创作者 1 -->
+    <div class="creator-card">
+      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=300" class="creator-avatar" alt="Artist">
+      <div class="creator-info">
+        <h3>Alex Vance</h3>
+        <div class="creator-role">Aerospace Photographer</div>
+        <div class="creator-bio">Specializing in long-exposure launch photography and Boca Chica Starbase launchpad close-ups.</div>
+      </div>
+    </div>
+
+    <!-- 创作者 2 -->
+    <div class="creator-card">
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=300" class="creator-avatar" alt="Artist">
+      <div class="creator-info">
+        <h3>Elena Rostova</h3>
+        <div class="creator-role">3D Concept Artist</div>
+        <div class="creator-bio">Creating ultra-realistic renders of future Starship orbital refueling missions and Mars landings.</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
