@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archives - StarbaseArt</title>
+  <style>
+    body { background-color: #0d0e12; color: #f0f0f5; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 0; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; background: #151821; border-bottom: 1px solid #2a2e3d; }
+    .logo { font-size: 1.5rem; font-weight: bold; color: #fff; text-decoration: none; letter-spacing: 1px; }
+    nav a { color: #a0a5b5; text-decoration: none; margin-left: 24px; font-size: 0.95rem; transition: color 0.2s; }
+    nav a:hover, nav a.active { color: #00f0ff; }
+    .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+    h1 { font-size: 2rem; margin-bottom: 10px; }
+    p.subtitle { color: #8a8f9e; margin-bottom: 40px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; }
+    .card { background: #171b26; border-radius: 8px; overflow: hidden; border: 1px solid #282d3c; }
+    .card img { width: 100%; height: 220px; object-fit: cover; display: block; }
+    .card-body { padding: 16px; }
+    .card-tag { font-size: 0.75rem; color: #00f0ff; text-transform: uppercase; font-weight: bold; }
+    .card-title { font-size: 1.1rem; margin: 8px 0; color: #fff; }
+    .card-desc { font-size: 0.85rem; color: #9aa0b0; line-height: 1.4; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">STARBASEART</a>
+    <nav>
+      <a href="archives.html" class="active">Archives</a>
+      <a href="creators.html">Creators</a>
+      <a href="atelier.html">Atelier</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Mission Archives</h1>
+    <p class="subtitle">A visual history of Starship iterations and humanity's push to Mars.</p>
+    
+    <div class="grid">
+      <!-- 示例卡片 1 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&w=800&q=80" alt="Starship 14 Launch">
+        <div class="card-body">
+          <span class="card-tag">Flight Test 14</span>
+          <div class="card-title">Starship Flight 14 Catch</div>
+          <div class="card-desc">High-resolution capture of Mechazilla catching the Super Heavy booster.</div>
+        </div>
+      </div>
+
+      <!-- 示例卡片 2 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80" alt="Mars Concept">
+        <div class="card-body">
+          <span class="card-tag">Mars Concept</span>
+          <div class="card-title">First Colony Render</div>
+          <div class="card-desc">3D render of the initial Starbase propellant plant on Mars.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
