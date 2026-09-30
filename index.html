@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>StarbaseArt - Searching for the Way Home</title>
-    <!-- 加在这里即可 -->
     <meta name="description" content="StarbaseArt - Space-tech art, digital creative designs, and exploration.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
@@ -13,34 +12,132 @@
             background-color: #1a1a1a; 
             color: #ffffff; 
             text-align: center; 
-            padding: 50px; 
+            padding: 20px 20px 50px; 
             margin: 0;
         }
+        
+        /* 导航栏样式 */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto 40px auto;
+            padding: 15px 0;
+            border-bottom: 1px solid #333;
+        }
+        .site-brand {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #00ffff;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 1em;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        nav a:hover, nav a.active {
+            color: #00ffff;
+        }
+
         h1, h2, a { color: #00ffff; } 
+
+        .hero-section {
+            padding: 30px 0 20px;
+        }
+
+        /* 栏目网格展示区 */
+        .sections-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 40px auto;
+            text-align: left;
+        }
+        .section-card {
+            background-color: #242424;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 25px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .section-card:hover {
+            transform: translateY(-4px);
+            border-color: #00ffff;
+        }
+        .section-card h3 {
+            margin-top: 0;
+            color: #00ffff;
+            font-size: 1.4em;
+        }
+        .section-card p {
+            color: #cccccc;
+            font-size: 0.95em;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .section-card a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 <body>
 
-    <div style="text-align: center; padding: 50px 0;">
-        
-        <h1 style="color: #00ffff; font-size: 2.8em; margin-bottom: 5px;">
+    <!-- 顶栏导航 -->
+    <header>
+        <a href="index.html" class="site-brand">STARBASEART</a>
+        <nav>
+            <a href="archives.html">Archives</a>
+            <a href="creators.html">Creators</a>
+            <a href="atelier.html">Atelier</a>
+        </nav>
+    </header>
+
+    <!-- 核心 Hero 区块 -->
+    <div class="hero-section">
+        <h1 style="font-size: 2.8em; margin-bottom: 5px;">
             Welcome to StarbaseArt!
         </h1>
 
-        <p style="font-size: 1.5em; color: #ffffff; margin-bottom: 40px;">
+        <p style="font-size: 1.5em; color: #ffffff; margin-bottom: 30px;">
             All the starlight exploration is merely searching for the way home.
         </p>
 
-        <p style="font-size: 1.3em; color: #ffffff;">
-            Explore the future of art and design:
-        </p>
         <p style="margin-top: 10px;">
-            <a href="subscribe.html" style="color: #00ffff; text-decoration: none; font-weight: bold; font-size: 1.5em;">
-                JOIN THE TRANSMISSION HERE!
+            <a href="subscribe.html" style="color: #00ffff; text-decoration: none; font-weight: bold; font-size: 1.3em;">
+                JOIN THE TRANSMISSION HERE! →
             </a>
         </p>
-
     </div>
-    
-    </body>
+
+    <!-- 3大主要栏目导览 -->
+    <div class="sections-grid">
+        <div class="section-card">
+            <h3>Mission Archives</h3>
+            <p>Visual chronology of Starship iterations, launch captures, and humanity's push towards Mars.</p>
+            <a href="archives.html">ENTER ARCHIVES →</a>
+        </div>
+
+        <div class="section-card">
+            <h3>Creators</h3>
+            <p>Featured aerospace photographers, 3D artists, and space tech designers in the community.</p>
+            <a href="creators.html">VIEW CREATORS →</a>
+        </div>
+
+        <div class="section-card">
+            <h3>Atelier</h3>
+            <p>Exclusive 8K digital wallpapers, limited fine art prints, and physical space-tech collectibles.</p>
+            <a href="atelier.html">EXPLORE ATELIER →</a>
+        </div>
+    </div>
+
+</body>
 </html>
