@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# 明确允许主流 AI 爬虫抓取
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://starbaseart.com/sitemap.xml
